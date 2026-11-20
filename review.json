@@ -1,0 +1,1370 @@
+[
+ {
+  "page": 2,
+  "img": "p02.webp",
+  "ocr": "(Cardiac Notche",
+  "conf": 65,
+  "reason": "low OCR confidence 65",
+  "x": 1202,
+  "y": 1087
+ },
+ {
+  "page": 4,
+  "img": "p04.webp",
+  "ocr": "Trachea",
+  "conf": 0,
+  "reason": "low OCR confidence 0",
+  "x": 1093,
+  "y": 647
+ },
+ {
+  "page": 4,
+  "img": "p04.webp",
+  "ocr": "Pau",
+  "conf": 29,
+  "reason": "low OCR confidence 29",
+  "x": 483,
+  "y": 751
+ },
+ {
+  "page": 4,
+  "img": "p04.webp",
+  "ocr": "| Left pulmonar ‘=",
+  "conf": 80,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 1019,
+  "y": 1506
+ },
+ {
+  "page": 4,
+  "img": "p04.webp",
+  "ocr": "‘ligament.",
+  "conf": 0,
+  "reason": "low OCR confidence 0",
+  "x": 1339,
+  "y": 1506
+ },
+ {
+  "page": 5,
+  "img": "p05.webp",
+  "ocr": "‘Aortic Arch |",
+  "conf": 17,
+  "reason": "low OCR confidence 17",
+  "x": 362,
+  "y": 463
+ },
+ {
+  "page": 5,
+  "img": "p05.webp",
+  "ocr": "‘Arc",
+  "conf": 80,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 232,
+  "y": 536
+ },
+ {
+  "page": 5,
+  "img": "p05.webp",
+  "ocr": "rch,",
+  "conf": 67,
+  "reason": "low OCR confidence 67",
+  "x": 284,
+  "y": 538
+ },
+ {
+  "page": 5,
+  "img": "p05.webp",
+  "ocr": "eee eee - | Superior Left pulmonary vein",
+  "conf": 62,
+  "reason": "low OCR confidence 62",
+  "x": 788,
+  "y": 1024
+ },
+ {
+  "page": 6,
+  "img": "p06.webp",
+  "ocr": "| Central Tendon ¢ of Diaphragm |",
+  "conf": 91,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 51,
+  "y": 947
+ },
+ {
+  "page": 6,
+  "img": "p06.webp",
+  "ocr": "[Caval Opening",
+  "conf": 78,
+  "reason": "low OCR confidence 78",
+  "x": 871,
+  "y": 933
+ },
+ {
+  "page": 6,
+  "img": "p06.webp",
+  "ocr": "(Right Crus of Diaphragm |",
+  "conf": 87,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 991,
+  "y": 1108
+ },
+ {
+  "page": 6,
+  "img": "p06.webp",
+  "ocr": "TaAhdaminal Ba ‘Abdominal Esophagus |",
+  "conf": 61,
+  "reason": "low OCR confidence 61",
+  "x": 1001,
+  "y": 1284
+ },
+ {
+  "page": 6,
+  "img": "p06.webp",
+  "ocr": "_Celiac Trunk ,",
+  "conf": 79,
+  "reason": "low OCR confidence 79",
+  "x": 936,
+  "y": 1937
+ },
+ {
+  "page": 7,
+  "img": "p07.webp",
+  "ocr": "‘Ascending Aorta",
+  "conf": 40,
+  "reason": "low OCR confidence 40",
+  "x": 73,
+  "y": 978
+ },
+ {
+  "page": 7,
+  "img": "p07.webp",
+  "ocr": "[Right Auricle_",
+  "conf": 42,
+  "reason": "low OCR confidence 42",
+  "x": 30,
+  "y": 1148
+ },
+ {
+  "page": 7,
+  "img": "p07.webp",
+  "ocr": "“Apex of the Heart :",
+  "conf": 72,
+  "reason": "low OCR confidence 72",
+  "x": 1051,
+  "y": 1851
+ },
+ {
+  "page": 8,
+  "img": "p08.webp",
+  "ocr": "",
+  "conf": 0,
+  "reason": "low OCR confidence 0",
+  "x": 798,
+  "y": 1440
+ },
+ {
+  "page": 8,
+  "img": "p08.webp",
+  "ocr": "' Atrioventricular Groove |",
+  "conf": 82,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 64,
+  "y": 1502
+ },
+ {
+  "page": 9,
+  "img": "p09.webp",
+  "ocr": "‘Crista Terminalis |",
+  "conf": 74,
+  "reason": "low OCR confidence 74",
+  "x": 953,
+  "y": 868
+ },
+ {
+  "page": 9,
+  "img": "p09.webp",
+  "ocr": "‘Pectinate Muscle |",
+  "conf": 66,
+  "reason": "low OCR confidence 66",
+  "x": 77,
+  "y": 1288
+ },
+ {
+  "page": 10,
+  "img": "p10.webp",
+  "ocr": "<- -",
+  "conf": 4,
+  "reason": "low OCR confidence 4",
+  "x": 895,
+  "y": 1313
+ },
+ {
+  "page": 10,
+  "img": "p10.webp",
+  "ocr": "'Circumflex Branch of Left Coronary Artery |",
+  "conf": 82,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 7,
+  "y": 1559
+ },
+ {
+  "page": 10,
+  "img": "p10.webp",
+  "ocr": "BR",
+  "conf": 51,
+  "reason": "low OCR confidence 51",
+  "x": 1482,
+  "y": 2117
+ },
+ {
+  "page": 11,
+  "img": "p11.webp",
+  "ocr": "| Right Inferior pulmonar ; VE",
+  "conf": 70,
+  "reason": "low OCR confidence 70",
+  "x": 933,
+  "y": 1724
+ },
+ {
+  "page": 11,
+  "img": "p11.webp",
+  "ocr": "‘vein",
+  "conf": 69,
+  "reason": "fragment (single lowercase/short word)",
+  "x": 1456,
+  "y": 1734
+ },
+ {
+  "page": 12,
+  "img": "p12.webp",
+  "ocr": ". 4",
+  "conf": 38,
+  "reason": "low OCR confidence 38",
+  "x": 690,
+  "y": 595
+ },
+ {
+  "page": 12,
+  "img": "p12.webp",
+  "ocr": "'Circumflex Branch of Left Coronary Artery |",
+  "conf": 87,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 97,
+  "y": 1361
+ },
+ {
+  "page": 13,
+  "img": "p13.webp",
+  "ocr": "Se Left Atrium |",
+  "conf": 74,
+  "reason": "low OCR confidence 74",
+  "x": 649,
+  "y": 552
+ },
+ {
+  "page": 13,
+  "img": "p13.webp",
+  "ocr": "| Fossa Ovalis |",
+  "conf": 71,
+  "reason": "low OCR confidence 71",
+  "x": 186,
+  "y": 862
+ },
+ {
+  "page": 13,
+  "img": "p13.webp",
+  "ocr": "| (Membranous part) |",
+  "conf": 79,
+  "reason": "low OCR confidence 79",
+  "x": 1171,
+  "y": 941
+ },
+ {
+  "page": 13,
+  "img": "p13.webp",
+  "ocr": "pillar",
+  "conf": 74,
+  "reason": "low OCR confidence 74",
+  "x": 1255,
+  "y": 1419
+ },
+ {
+  "page": 13,
+  "img": "p13.webp",
+  "ocr": "7 Muscle )",
+  "conf": 14,
+  "reason": "low OCR confidence 14",
+  "x": 1353,
+  "y": 1419
+ },
+ {
+  "page": 13,
+  "img": "p13.webp",
+  "ocr": "‘(Muscular part) |",
+  "conf": 73,
+  "reason": "low OCR confidence 73",
+  "x": 1202,
+  "y": 1950
+ },
+ {
+  "page": 14,
+  "img": "p14.webp",
+  "ocr": "",
+  "conf": 0,
+  "reason": "low OCR confidence 0",
+  "x": 728,
+  "y": 1304
+ },
+ {
+  "page": 14,
+  "img": "p14.webp",
+  "ocr": "Sv",
+  "conf": 31,
+  "reason": "low OCR confidence 31",
+  "x": 1372,
+  "y": 1474
+ },
+ {
+  "page": 14,
+  "img": "p14.webp",
+  "ocr": "S",
+  "conf": 82,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 626,
+  "y": 1545
+ },
+ {
+  "page": 15,
+  "img": "p15.webp",
+  "ocr": "[Right Internal J ugular Vein |",
+  "conf": 59,
+  "reason": "low OCR confidence 59",
+  "x": 105,
+  "y": 646
+ },
+ {
+  "page": 15,
+  "img": "p15.webp",
+  "ocr": "(Thymus Gland |",
+  "conf": 79,
+  "reason": "low OCR confidence 79",
+  "x": 945,
+  "y": 1269
+ },
+ {
+  "page": 15,
+  "img": "p15.webp",
+  "ocr": "‘of Diaphrag",
+  "conf": 62,
+  "reason": "low OCR confidence 62",
+  "x": 269,
+  "y": 1723
+ },
+ {
+  "page": 16,
+  "img": "p16.webp",
+  "ocr": "tight |",
+  "conf": 85,
+  "reason": "fragment (single lowercase/short word)",
+  "x": 1174,
+  "y": 1194
+ },
+ {
+  "page": 16,
+  "img": "p16.webp",
+  "ocr": "7 Arter",
+  "conf": 82,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 1442,
+  "y": 1200
+ },
+ {
+  "page": 17,
+  "img": "p17.webp",
+  "ocr": "",
+  "conf": 0,
+  "reason": "low OCR confidence 0",
+  "x": 254,
+  "y": 110
+ },
+ {
+  "page": 17,
+  "img": "p17.webp",
+  "ocr": "Phrenic Nerve |",
+  "conf": 92,
+  "reason": "note-page label, not a pin",
+  "x": 220,
+  "y": 270
+ },
+ {
+  "page": 17,
+  "img": "p17.webp",
+  "ocr": ", Anteriorly to",
+  "conf": 62,
+  "reason": "low OCR confidence 62",
+  "x": 762,
+  "y": 264
+ },
+ {
+  "page": 17,
+  "img": "p17.webp",
+  "ocr": "the Hilum (root",
+  "conf": 93,
+  "reason": "note-page label, not a pin",
+  "x": 995,
+  "y": 252
+ },
+ {
+  "page": 17,
+  "img": "p17.webp",
+  "ocr": "of the lung)",
+  "conf": 96,
+  "reason": "note-page label, not a pin",
+  "x": 1249,
+  "y": 264
+ },
+ {
+  "page": 17,
+  "img": "p17.webp",
+  "ocr": "Vagus Nerve |",
+  "conf": 94,
+  "reason": "note-page label, not a pin",
+  "x": 221,
+  "y": 357
+ },
+ {
+  "page": 17,
+  "img": "p17.webp",
+  "ocr": "| Posteriorly {",
+  "conf": 83,
+  "reason": "note-page label, not a pin",
+  "x": 747,
+  "y": 361
+ },
+ {
+  "page": 17,
+  "img": "p17.webp",
+  "ocr": "the Hilum (root",
+  "conf": 93,
+  "reason": "note-page label, not a pin",
+  "x": 979,
+  "y": 338
+ },
+ {
+  "page": 17,
+  "img": "p17.webp",
+  "ocr": "of the lung)",
+  "conf": 96,
+  "reason": "note-page label, not a pin",
+  "x": 1245,
+  "y": 361
+ },
+ {
+  "page": 17,
+  "img": "p17.webp",
+  "ocr": "fren",
+  "conf": 39,
+  "reason": "low OCR confidence 39",
+  "x": 8,
+  "y": 1588
+ },
+ {
+  "page": 17,
+  "img": "p17.webp",
+  "ocr": "~ ed Ge t Superior Pulmonar a",
+  "conf": 55,
+  "reason": "low OCR confidence 55",
+  "x": 73,
+  "y": 1586
+ },
+ {
+  "page": 17,
+  "img": "p17.webp",
+  "ocr": "Inferior Ss",
+  "conf": 36,
+  "reason": "low OCR confidence 36",
+  "x": 830,
+  "y": 1549
+ },
+ {
+  "page": 17,
+  "img": "p17.webp",
+  "ocr": ", Sa. | ‘'Hemiaz | on.",
+  "conf": 36,
+  "reason": "low OCR confidence 36",
+  "x": 1014,
+  "y": 1545
+ },
+ {
+  "page": 17,
+  "img": "p17.webp",
+  "ocr": "Vein }",
+  "conf": 30,
+  "reason": "low OCR confidence 30",
+  "x": 367,
+  "y": 1603
+ },
+ {
+  "page": 17,
+  "img": "p17.webp",
+  "ocr": "[ren",
+  "conf": 29,
+  "reason": "low OCR confidence 29",
+  "x": 228,
+  "y": 1719
+ },
+ {
+  "page": 17,
+  "img": "p17.webp",
+  "ocr": "rn 2 a.) + | t Inferior ] Lo A",
+  "conf": 44,
+  "reason": "low OCR confidence 44",
+  "x": 296,
+  "y": 1718
+ },
+ {
+  "page": 17,
+  "img": "p17.webp",
+  "ocr": "So",
+  "conf": 0,
+  "reason": "low OCR confidence 0",
+  "x": 747,
+  "y": 1858
+ },
+ {
+  "page": 19,
+  "img": "p19.webp",
+  "ocr": "",
+  "conf": 0,
+  "reason": "low OCR confidence 0",
+  "x": 39,
+  "y": 1436
+ },
+ {
+  "page": 19,
+  "img": "p19.webp",
+  "ocr": "ll =e t Transversus ae |",
+  "conf": 36,
+  "reason": "low OCR confidence 36",
+  "x": 131,
+  "y": 1432
+ },
+ {
+  "page": 19,
+  "img": "p19.webp",
+  "ocr": "+; Muscle )",
+  "conf": 48,
+  "reason": "low OCR confidence 48",
+  "x": 534,
+  "y": 1436
+ },
+ {
+  "page": 19,
+  "img": "p19.webp",
+  "ocr": "[Left Diac spine |",
+  "conf": 60,
+  "reason": "low OCR confidence 60",
+  "x": 1115,
+  "y": 1443
+ },
+ {
+  "page": 19,
+  "img": "p19.webp",
+  "ocr": "Right Tliacus",
+  "conf": 73,
+  "reason": "low OCR confidence 73",
+  "x": 63,
+  "y": 1739
+ },
+ {
+  "page": 19,
+  "img": "p19.webp",
+  "ocr": "SE",
+  "conf": 19,
+  "reason": "low OCR confidence 19",
+  "x": 1454,
+  "y": 2133
+ },
+ {
+  "page": 20,
+  "img": "p20.webp",
+  "ocr": "- \" \\\\",
+  "conf": 8,
+  "reason": "low OCR confidence 8",
+  "x": 677,
+  "y": 362
+ },
+ {
+  "page": 20,
+  "img": "p20.webp",
+  "ocr": "(Arch of azygos |",
+  "conf": 89,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 122,
+  "y": 1245
+ },
+ {
+  "page": 20,
+  "img": "p20.webp",
+  "ocr": "[Left Sympathetic Chain |",
+  "conf": 77,
+  "reason": "low OCR confidence 77",
+  "x": 1071,
+  "y": 1307
+ },
+ {
+  "page": 20,
+  "img": "p20.webp",
+  "ocr": "' Thoracic Duct |",
+  "conf": 66,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 1053,
+  "y": 1468
+ },
+ {
+  "page": 20,
+  "img": "p20.webp",
+  "ocr": "Hemiazygus ’ ze",
+  "conf": 51,
+  "reason": "low OCR confidence 51",
+  "x": 1154,
+  "y": 1588
+ },
+ {
+  "page": 20,
+  "img": "p20.webp",
+  "ocr": "} vein :",
+  "conf": 50,
+  "reason": "fragment (single lowercase/short word)",
+  "x": 1394,
+  "y": 1588
+ },
+ {
+  "page": 20,
+  "img": "p20.webp",
+  "ocr": "ri aa ‘Diaphragm,",
+  "conf": 35,
+  "reason": "low OCR confidence 35",
+  "x": 1313,
+  "y": 2038
+ },
+ {
+  "page": 21,
+  "img": "p21.webp",
+  "ocr": "of Diaphrag)",
+  "conf": 56,
+  "reason": "low OCR confidence 56",
+  "x": 819,
+  "y": 571
+ },
+ {
+  "page": 21,
+  "img": "p21.webp",
+  "ocr": "Ss r Inferior Mesentric Artery",
+  "conf": 64,
+  "reason": "low OCR confidence 64",
+  "x": 1115,
+  "y": 1158
+ },
+ {
+  "page": 21,
+  "img": "p21.webp",
+  "ocr": "[Richt comn a Righ common i",
+  "conf": 70,
+  "reason": "low OCR confidence 70",
+  "x": 36,
+  "y": 1307
+ },
+ {
+  "page": 21,
+  "img": "p21.webp",
+  "ocr": "\\ iliac arter",
+  "conf": 75,
+  "reason": "low OCR confidence 75",
+  "x": 283,
+  "y": 1307
+ },
+ {
+  "page": 21,
+  "img": "p21.webp",
+  "ocr": "t iliac vein]",
+  "conf": 63,
+  "reason": "fragment (starts lowercase)",
+  "x": 519,
+  "y": 1680
+ },
+ {
+  "page": 22,
+  "img": "p22.webp",
+  "ocr": "Left Renal Artery »",
+  "conf": 71,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 755,
+  "y": 429
+ },
+ {
+  "page": 22,
+  "img": "p22.webp",
+  "ocr": "[Mliacus Muscle |",
+  "conf": 73,
+  "reason": "low OCR confidence 73",
+  "x": 164,
+  "y": 1432
+ },
+ {
+  "page": 22,
+  "img": "p22.webp",
+  "ocr": "(Anterior Superior iliac spine |",
+  "conf": 85,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 1026,
+  "y": 1516
+ },
+ {
+  "page": 22,
+  "img": "p22.webp",
+  "ocr": "‘Inguinal ligament |",
+  "conf": 74,
+  "reason": "low OCR confidence 74",
+  "x": 1110,
+  "y": 1657
+ },
+ {
+  "page": 22,
+  "img": "p22.webp",
+  "ocr": "(Pubic Tubercle",
+  "conf": 76,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 225,
+  "y": 1837
+ },
+ {
+  "page": 23,
+  "img": "p23.webp",
+  "ocr": "ct iy",
+  "conf": 34,
+  "reason": "low OCR confidence 34",
+  "x": 369,
+  "y": 1821
+ },
+ {
+  "page": 24,
+  "img": "p24.webp",
+  "ocr": "a",
+  "conf": 43,
+  "reason": "low OCR confidence 43",
+  "x": 648,
+  "y": 1755
+ },
+ {
+  "page": 25,
+  "img": "p25.webp",
+  "ocr": "[Vas Deferens",
+  "conf": 46,
+  "reason": "low OCR confidence 46",
+  "x": 452,
+  "y": 1179
+ },
+ {
+  "page": 25,
+  "img": "p25.webp",
+  "ocr": "'Epidedms",
+  "conf": 28,
+  "reason": "low OCR confidence 28",
+  "x": 1138,
+  "y": 1776
+ },
+ {
+  "page": 26,
+  "img": "p26.webp",
+  "ocr": "(Circular Muscular Layer |",
+  "conf": 85,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 1161,
+  "y": 703
+ },
+ {
+  "page": 26,
+  "img": "p26.webp",
+  "ocr": "eee Pa _Left Gastric Artery",
+  "conf": 63,
+  "reason": "low OCR confidence 63",
+  "x": 769,
+  "y": 1158
+ },
+ {
+  "page": 26,
+  "img": "p26.webp",
+  "ocr": "",
+  "conf": 0,
+  "reason": "low OCR confidence 0",
+  "x": 199,
+  "y": 1496
+ },
+ {
+  "page": 27,
+  "img": "p27.webp",
+  "ocr": "ia",
+  "conf": 54,
+  "reason": "low OCR confidence 54",
+  "x": 660,
+  "y": 751
+ },
+ {
+  "page": 27,
+  "img": "p27.webp",
+  "ocr": "L Angularis (Ang",
+  "conf": 74,
+  "reason": "low OCR confidence 74",
+  "x": 975,
+  "y": 1278
+ },
+ {
+  "page": 27,
+  "img": "p27.webp",
+  "ocr": "ular Notch) |",
+  "conf": 76,
+  "reason": "low OCR confidence 76",
+  "x": 1267,
+  "y": 1278
+ },
+ {
+  "page": 27,
+  "img": "p27.webp",
+  "ocr": "Greater Curvature",
+  "conf": 48,
+  "reason": "low OCR confidence 48",
+  "x": 493,
+  "y": 1899
+ },
+ {
+  "page": 28,
+  "img": "p28.webp",
+  "ocr": "[Tleum",
+  "conf": 61,
+  "reason": "low OCR confidence 61",
+  "x": 479,
+  "y": 1673
+ },
+ {
+  "page": 29,
+  "img": "p29.webp",
+  "ocr": "lleum",
+  "conf": 32,
+  "reason": "low OCR confidence 32",
+  "x": 1322,
+  "y": 1193
+ },
+ {
+  "page": 29,
+  "img": "p29.webp",
+  "ocr": "iS",
+  "conf": 60,
+  "reason": "low OCR confidence 60",
+  "x": 858,
+  "y": 1466
+ },
+ {
+  "page": 33,
+  "img": "p33.webp",
+  "ocr": "(Gall Bladder",
+  "conf": 81,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 134,
+  "y": 963
+ },
+ {
+  "page": 33,
+  "img": "p33.webp",
+  "ocr": "",
+  "conf": 0,
+  "reason": "low OCR confidence 0",
+  "x": 232,
+  "y": 1395
+ },
+ {
+  "page": 35,
+  "img": "p35.webp",
+  "ocr": "'Gall Bladder |",
+  "conf": 60,
+  "reason": "low OCR confidence 60",
+  "x": 106,
+  "y": 1509
+ },
+ {
+  "page": 35,
+  "img": "p35.webp",
+  "ocr": "|]",
+  "conf": 30,
+  "reason": "low OCR confidence 30",
+  "x": 615,
+  "y": 2104
+ },
+ {
+  "page": 36,
+  "img": "p36.webp",
+  "ocr": "(awa gl dg ole! 2 GHdl9 95]",
+  "conf": 26,
+  "reason": "low OCR confidence 26",
+  "x": 944,
+  "y": 210
+ },
+ {
+  "page": 36,
+  "img": "p36.webp",
+  "ocr": "ole.",
+  "conf": 64,
+  "reason": "low OCR confidence 64",
+  "x": 219,
+  "y": 1617
+ },
+ {
+  "page": 36,
+  "img": "p36.webp",
+  "ocr": "| SS paul coearadl Aged sod das | | Inferior vena cava =(¢Lasl! 4gai 9 ‘Descending abdominal aorta = (5 .usll agai ?",
+  "conf": 45,
+  "reason": "low OCR confidence 45",
+  "x": 53,
+  "y": 1884
+ },
+ {
+  "page": 37,
+  "img": "p37.webp",
+  "ocr": "a - = Superior Mesentric Artery |",
+  "conf": 60,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 1105,
+  "y": 968
+ },
+ {
+  "page": 37,
+  "img": "p37.webp",
+  "ocr": "(Inferior vena cava |",
+  "conf": 77,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 118,
+  "y": 1116
+ },
+ {
+  "page": 39,
+  "img": "p39.webp",
+  "ocr": "SN",
+  "conf": 29,
+  "reason": "low OCR confidence 29",
+  "x": 935,
+  "y": 1357
+ },
+ {
+  "page": 39,
+  "img": "p39.webp",
+  "ocr": "Right Ureter",
+  "conf": 46,
+  "reason": "low OCR confidence 46",
+  "x": 435,
+  "y": 1694
+ },
+ {
+  "page": 42,
+  "img": "p42.webp",
+  "ocr": "",
+  "conf": 0,
+  "reason": "low OCR confidence 0",
+  "x": 395,
+  "y": 868
+ },
+ {
+  "page": 42,
+  "img": "p42.webp",
+  "ocr": "yS",
+  "conf": 29,
+  "reason": "low OCR confidence 29",
+  "x": 666,
+  "y": 1027
+ },
+ {
+  "page": 42,
+  "img": "p42.webp",
+  "ocr": "4 St",
+  "conf": 42,
+  "reason": "low OCR confidence 42",
+  "x": 351,
+  "y": 1236
+ },
+ {
+  "page": 42,
+  "img": "p42.webp",
+  "ocr": "ae \\>",
+  "conf": 24,
+  "reason": "low OCR confidence 24",
+  "x": 358,
+  "y": 1270
+ },
+ {
+  "page": 42,
+  "img": "p42.webp",
+  "ocr": "(Third part of Duodenum",
+  "conf": 85,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 31,
+  "y": 1679
+ },
+ {
+  "page": 45,
+  "img": "p45.webp",
+  "ocr": "1st Costal cartilage",
+  "conf": 93,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 109,
+  "y": 464
+ },
+ {
+  "page": 45,
+  "img": "p45.webp",
+  "ocr": "Xiphoid process",
+  "conf": 48,
+  "reason": "low OCR confidence 48",
+  "x": 803,
+  "y": 1684
+ },
+ {
+  "page": 45,
+  "img": "p45.webp",
+  "ocr": "| 7th Costal Cartilage |",
+  "conf": 92,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 71,
+  "y": 1838
+ },
+ {
+  "page": 46,
+  "img": "p46.webp",
+  "ocr": "| Internal thoracic artery -",
+  "conf": 90,
+  "reason": "annotation/Arabic note page",
+  "x": 987,
+  "y": 856
+ },
+ {
+  "page": 46,
+  "img": "p46.webp",
+  "ocr": "gives anterior intercostal branches",
+  "conf": 74,
+  "reason": "low OCR confidence 74",
+  "x": 903,
+  "y": 926
+ },
+ {
+  "page": 46,
+  "img": "p46.webp",
+  "ocr": "(1st-6th intercostal :",
+  "conf": 63,
+  "reason": "low OCR confidence 63",
+  "x": 939,
+  "y": 976
+ },
+ {
+  "page": 46,
+  "img": "p46.webp",
+  "ocr": "| spaces)",
+  "conf": 95,
+  "reason": "fragment (single lowercase/short word)",
+  "x": 1298,
+  "y": 976
+ },
+ {
+  "page": 46,
+  "img": "p46.webp",
+  "ocr": "t the 6th intercostal space ( L. (1: ee",
+  "conf": 61,
+  "reason": "low OCR confidence 61",
+  "x": 942,
+  "y": 1029
+ },
+ {
+  "page": 46,
+  "img": "p46.webp",
+  "ocr": "divides |",
+  "conf": 74,
+  "reason": "low OCR confidence 74",
+  "x": 1397,
+  "y": 1029
+ },
+ {
+  "page": 46,
+  "img": "p46.webp",
+  "ocr": "| into |",
+  "conf": 82,
+  "reason": "fragment (single lowercase/short word)",
+  "x": 1179,
+  "y": 1078
+ },
+ {
+  "page": 46,
+  "img": "p46.webp",
+  "ocr": "~~ Musculophrenic artery _ (runs laterally and downward)",
+  "conf": 73,
+  "reason": "low OCR confidence 73",
+  "x": 964,
+  "y": 1324
+ },
+ {
+  "page": 46,
+  "img": "p46.webp",
+  "ocr": "Superior epigastric artery |",
+  "conf": 92,
+  "reason": "annotation/Arabic note page",
+  "x": 1000,
+  "y": 1693
+ },
+ {
+  "page": 46,
+  "img": "p46.webp",
+  "ocr": "(continues downward into |",
+  "conf": 76,
+  "reason": "low OCR confidence 76",
+  "x": 964,
+  "y": 1741
+ },
+ {
+  "page": 46,
+  "img": "p46.webp",
+  "ocr": ") the |",
+  "conf": 78,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 1433,
+  "y": 1743
+ },
+ {
+  "page": 47,
+  "img": "p47.webp",
+  "ocr": "| Suprasternal Notch\" Jugular”",
+  "conf": 75,
+  "reason": "low OCR confidence 75",
+  "x": 742,
+  "y": 1158
+ },
+ {
+  "page": 47,
+  "img": "p47.webp",
+  "ocr": "| 1st Costal Cartilage",
+  "conf": 92,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 770,
+  "y": 1283
+ },
+ {
+  "page": 47,
+  "img": "p47.webp",
+  "ocr": "| 2nd Costal Cartilage",
+  "conf": 93,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 759,
+  "y": 1385
+ },
+ {
+  "page": 47,
+  "img": "p47.webp",
+  "ocr": "[Costal Cartilaginous plate |",
+  "conf": 72,
+  "reason": "low OCR confidence 72",
+  "x": 58,
+  "y": 1584
+ },
+ {
+  "page": 47,
+  "img": "p47.webp",
+  "ocr": "[Xiphoaternal joint",
+  "conf": 76,
+  "reason": "low OCR confidence 76",
+  "x": 817,
+  "y": 1618
+ },
+ {
+  "page": 47,
+  "img": "p47.webp",
+  "ocr": "| Xiphoid process |",
+  "conf": 79,
+  "reason": "low OCR confidence 79",
+  "x": 822,
+  "y": 1679
+ },
+ {
+  "page": 47,
+  "img": "p47.webp",
+  "ocr": "8th costal cartilage 9th costal cartilage 10th costal cartilage |",
+  "conf": 94,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 848,
+  "y": 1759
+ },
+ {
+  "page": 47,
+  "img": "p47.webp",
+  "ocr": "| Floating Rib",
+  "conf": 78,
+  "reason": "low OCR confidence 78",
+  "x": 836,
+  "y": 1969
+ },
+ {
+  "page": 48,
+  "img": "p48.webp",
+  "ocr": "1st |",
+  "conf": 91,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 400,
+  "y": 300
+ },
+ {
+  "page": 48,
+  "img": "p48.webp",
+  "ocr": "2nd.",
+  "conf": 44,
+  "reason": "low OCR confidence 44",
+  "x": 413,
+  "y": 515
+ },
+ {
+  "page": 48,
+  "img": "p48.webp",
+  "ocr": "3rd.",
+  "conf": 15,
+  "reason": "low OCR confidence 15",
+  "x": 420,
+  "y": 708
+ },
+ {
+  "page": 48,
+  "img": "p48.webp",
+  "ocr": "Ath",
+  "conf": 96,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 425,
+  "y": 873
+ },
+ {
+  "page": 48,
+  "img": "p48.webp",
+  "ocr": "oth",
+  "conf": 96,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 1170,
+  "y": 963
+ },
+ {
+  "page": 48,
+  "img": "p48.webp",
+  "ocr": "6th",
+  "conf": 96,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 1197,
+  "y": 1081
+ },
+ {
+  "page": 48,
+  "img": "p48.webp",
+  "ocr": "7th",
+  "conf": 96,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 560,
+  "y": 1249
+ },
+ {
+  "page": 48,
+  "img": "p48.webp",
+  "ocr": "Sth",
+  "conf": 94,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 451,
+  "y": 1381
+ },
+ {
+  "page": 48,
+  "img": "p48.webp",
+  "ocr": "9th",
+  "conf": 58,
+  "reason": "low OCR confidence 58",
+  "x": 1160,
+  "y": 1432
+ },
+ {
+  "page": 48,
+  "img": "p48.webp",
+  "ocr": "10th",
+  "conf": 95,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 120,
+  "y": 1505
+ },
+ {
+  "page": 49,
+  "img": "p49.webp",
+  "ocr": "Atypical Rib= 1st+2nd",
+  "conf": 91,
+  "reason": "not a clean term (OCR/short/non-English)",
+  "x": 503,
+  "y": 389
+ },
+ {
+  "page": 49,
+  "img": "p49.webp",
+  "ocr": "First rib Jl 2 ods",
+  "conf": 59,
+  "reason": "low OCR confidence 59",
+  "x": 728,
+  "y": 1062
+ },
+ {
+  "page": 56,
+  "img": "p56.webp",
+  "ocr": " Transver se process",
+  "conf": 70,
+  "reason": "low OCR confidence 70",
+  "x": 988,
+  "y": 1282
+ },
+ {
+  "page": 57,
+  "img": "p57.webp",
+  "ocr": "Vertebral foramen JI 2 ods",
+  "conf": 67,
+  "reason": "low OCR confidence 67",
+  "x": 510,
+  "y": 633
+ },
+ {
+  "page": 57,
+  "img": "p57.webp",
+  "ocr": "og] Cust doud odm Lol !! B (GLuiZl 9 WU2d b29>90 Yiro )",
+  "conf": 30,
+  "reason": "low OCR confidence 30",
+  "x": 760,
+  "y": 1697
+ },
+ {
+  "page": 58,
+  "img": "p58.webp",
+  "ocr": "vertebrae",
+  "conf": 96,
+  "reason": "fragment (single lowercase/short word)",
+  "x": 1218,
+  "y": 1070
+ },
+ {
+  "page": 58,
+  "img": "p58.webp",
+  "ocr": "articular",
+  "conf": 96,
+  "reason": "fragment (single lowercase/short word)",
+  "x": 36,
+  "y": 1459
+ },
+ {
+  "page": 58,
+  "img": "p58.webp",
+  "ocr": "process",
+  "conf": 96,
+  "reason": "fragment (single lowercase/short word)",
+  "x": 41,
+  "y": 1546
+ }
+]

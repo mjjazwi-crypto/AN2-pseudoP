@@ -1,0 +1,575 @@
+{
+ "sections": [
+  {
+   "id": "resp",
+   "images": 5,
+   "questions": 33
+  },
+  {
+   "id": "heart",
+   "images": 8,
+   "questions": 39
+  },
+  {
+   "id": "thorax",
+   "images": 4,
+   "questions": 37
+  },
+  {
+   "id": "torso",
+   "images": 4,
+   "questions": 36
+  },
+  {
+   "id": "wall",
+   "images": 2,
+   "questions": 17
+  },
+  {
+   "id": "testis",
+   "images": 1,
+   "questions": 5
+  },
+  {
+   "id": "stomach",
+   "images": 2,
+   "questions": 18
+  },
+  {
+   "id": "gut",
+   "images": 4,
+   "questions": 20
+  },
+  {
+   "id": "liver",
+   "images": 3,
+   "questions": 22
+  },
+  {
+   "id": "vessels",
+   "images": 2,
+   "questions": 19
+  },
+  {
+   "id": "kidney",
+   "images": 3,
+   "questions": 24
+  },
+  {
+   "id": "pancreas",
+   "images": 3,
+   "questions": 25
+  },
+  {
+   "id": "sternum",
+   "images": 4,
+   "questions": 11
+  },
+  {
+   "id": "ribs",
+   "images": 6,
+   "questions": 20
+  },
+  {
+   "id": "vertebra",
+   "images": 4,
+   "questions": 16
+  },
+  {
+   "id": "xray",
+   "images": 0,
+   "questions": 0
+  }
+ ],
+ "total_questions": 342,
+ "unique_terms": 257,
+ "needs_review": 152,
+ "typos_corrected": [
+  {
+   "page": 21,
+   "src": "Superior Mesentric Artery",
+   "word": "Mesentric",
+   "fixed": "Mesenteric"
+  },
+  {
+   "page": 21,
+   "src": "Left Gonadle Vein)",
+   "word": "Gonadle",
+   "fixed": "Gonadal"
+  },
+  {
+   "page": 21,
+   "src": "Right Gonadle Artery",
+   "word": "Gonadle",
+   "fixed": "Gonadal"
+  },
+  {
+   "page": 21,
+   "src": "Left Gonadle Artery",
+   "word": "Gonadle",
+   "fixed": "Gonadal"
+  },
+  {
+   "page": 22,
+   "src": "Superior Mesentric Artery",
+   "word": "Mesentric",
+   "fixed": "Mesenteric"
+  },
+  {
+   "page": 22,
+   "src": "Transversus Abdominus Muscle",
+   "word": "Abdominus",
+   "fixed": "Abdominis"
+  },
+  {
+   "page": 22,
+   "src": "Inferior Mesentric Artery",
+   "word": "Mesentric",
+   "fixed": "Mesenteric"
+  },
+  {
+   "page": 22,
+   "src": "Gonadle Vessels",
+   "word": "Gonadle",
+   "fixed": "Gonadal"
+  },
+  {
+   "page": 23,
+   "src": "Rectus Abdominus Muscle",
+   "word": "Abdominus",
+   "fixed": "Abdominis"
+  },
+  {
+   "page": 23,
+   "src": "Tendineus Intersections",
+   "word": "Tendineus",
+   "fixed": "Tendinous"
+  },
+  {
+   "page": 24,
+   "src": "Transversus Abdominus Muscle",
+   "word": "Abdominus",
+   "fixed": "Abdominis"
+  },
+  {
+   "page": 25,
+   "src": "Pumbiniform plexus (Testicular Vein)",
+   "word": "Pumbiniform",
+   "fixed": "Pampiniform"
+  },
+  {
+   "page": 28,
+   "src": "Hustration (Trensverse Colon)",
+   "word": "Hustration",
+   "fixed": "Haustration"
+  },
+  {
+   "page": 28,
+   "src": "Hustration (Trensverse Colon)",
+   "word": "Trensverse",
+   "fixed": "Transverse"
+  },
+  {
+   "page": 28,
+   "src": "Hustration (Ascending Colon)",
+   "word": "Hustration",
+   "fixed": "Haustration"
+  },
+  {
+   "page": 28,
+   "src": "Hustration (Descending Colon)",
+   "word": "Hustration",
+   "fixed": "Haustration"
+  },
+  {
+   "page": 30,
+   "src": "Inferior Mesentric (Sigmoid Artery) )",
+   "word": "Mesentric",
+   "fixed": "Mesenteric"
+  },
+  {
+   "page": 32,
+   "src": "Flaciform Ligament",
+   "word": "Flaciform",
+   "fixed": "Falciform"
+  },
+  {
+   "page": 36,
+   "src": "Lumber Veins",
+   "word": "Lumber",
+   "fixed": "Lumbar"
+  },
+  {
+   "page": 36,
+   "src": "Lumber Arteries",
+   "word": "Lumber",
+   "fixed": "Lumbar"
+  },
+  {
+   "page": 37,
+   "src": "Inferior Mesentric Artery",
+   "word": "Mesentric",
+   "fixed": "Mesenteric"
+  },
+  {
+   "page": 40,
+   "src": "Superior Mesentric Artery",
+   "word": "Mesentric",
+   "fixed": "Mesenteric"
+  },
+  {
+   "page": 41,
+   "src": "Inferior Pancreaticodudenal Artery",
+   "word": "Pancreaticodudenal",
+   "fixed": "Pancreaticoduodenal"
+  },
+  {
+   "page": 41,
+   "src": "Inferior Mesentric Vein",
+   "word": "Mesentric",
+   "fixed": "Mesenteric"
+  },
+  {
+   "page": 41,
+   "src": "Superior Mesentric Artery",
+   "word": "Mesentric",
+   "fixed": "Mesenteric"
+  },
+  {
+   "page": 41,
+   "src": "Superior Mesentric Vein",
+   "word": "Mesentric",
+   "fixed": "Mesenteric"
+  },
+  {
+   "page": 42,
+   "src": "S uperior Mesentric Artery",
+   "word": "Mesentric",
+   "fixed": "Mesenteric"
+  },
+  {
+   "page": 42,
+   "src": "Superior Mesentric Vein",
+   "word": "Mesentric",
+   "fixed": "Mesenteric"
+  },
+  {
+   "page": 47,
+   "src": "Manibirusternal joint sternal Angel\"",
+   "word": "Angel",
+   "fixed": "Angle"
+  },
+  {
+   "page": 47,
+   "src": "Manibirusternal joint sternal Angel\"",
+   "word": "Manibirusternal",
+   "fixed": "Manubriosternal"
+  },
+  {
+   "page": 52,
+   "src": "Angel of Typical Rib",
+   "word": "Angel",
+   "fixed": "Angle"
+  },
+  {
+   "page": 53,
+   "src": "Angel of typical Rib",
+   "word": "Angel",
+   "fixed": "Angle"
+  },
+  {
+   "page": 54,
+   "src": "Angel of Typical Rib",
+   "word": "Angel",
+   "fixed": "Angle"
+  }
+ ],
+ "skipped": "p1,p44 covers; p34 identical to p33 (same md5)",
+ "xray": "no checklist/X-ray images supplied -> empty section",
+ "prune_grow": {
+  "2": {
+   "before": 1,
+   "after": 1,
+   "leftover_pills_added": 0
+  },
+  "3": {
+   "before": 1,
+   "after": 1,
+   "leftover_pills_added": 0
+  },
+  "4": {
+   "before": 4,
+   "after": 4,
+   "leftover_pills_added": 0
+  },
+  "5": {
+   "before": 6,
+   "after": 6,
+   "leftover_pills_added": 0
+  },
+  "6": {
+   "before": 5,
+   "after": 5,
+   "leftover_pills_added": 0
+  },
+  "7": {
+   "before": 3,
+   "after": 3,
+   "leftover_pills_added": 0
+  },
+  "8": {
+   "before": 1,
+   "after": 1,
+   "leftover_pills_added": 0
+  },
+  "9": {
+   "before": 2,
+   "after": 2,
+   "leftover_pills_added": 0
+  },
+  "10": {
+   "before": 1,
+   "after": 1,
+   "leftover_pills_added": 0
+  },
+  "11": {
+   "before": 2,
+   "after": 2,
+   "leftover_pills_added": 0
+  },
+  "12": {
+   "before": 1,
+   "after": 1,
+   "leftover_pills_added": 0
+  },
+  "13": {
+   "before": 7,
+   "after": 7,
+   "leftover_pills_added": 0
+  },
+  "14": {
+   "before": 1,
+   "after": 1,
+   "leftover_pills_added": 0
+  },
+  "15": {
+   "before": 2,
+   "after": 2,
+   "leftover_pills_added": 0
+  },
+  "16": {
+   "before": 3,
+   "after": 3,
+   "leftover_pills_added": 0
+  },
+  "17": {
+   "before": 7,
+   "after": 7,
+   "leftover_pills_added": 0
+  },
+  "18": {
+   "before": 0,
+   "after": 0,
+   "leftover_pills_added": 0
+  },
+  "19": {
+   "before": 3,
+   "after": 3,
+   "leftover_pills_added": 0
+  },
+  "20": {
+   "before": 5,
+   "after": 5,
+   "leftover_pills_added": 0
+  },
+  "21": {
+   "before": 3,
+   "after": 3,
+   "leftover_pills_added": 0
+  },
+  "22": {
+   "before": 6,
+   "after": 6,
+   "leftover_pills_added": 0
+  },
+  "23": {
+   "before": 0,
+   "after": 0,
+   "leftover_pills_added": 0
+  },
+  "24": {
+   "before": 0,
+   "after": 0,
+   "leftover_pills_added": 0
+  },
+  "25": {
+   "before": 2,
+   "after": 2,
+   "leftover_pills_added": 0
+  },
+  "26": {
+   "before": 2,
+   "after": 2,
+   "leftover_pills_added": 0
+  },
+  "27": {
+   "before": 2,
+   "after": 2,
+   "leftover_pills_added": 0
+  },
+  "28": {
+   "before": 1,
+   "after": 1,
+   "leftover_pills_added": 0
+  },
+  "29": {
+   "before": 1,
+   "after": 1,
+   "leftover_pills_added": 0
+  },
+  "30": {
+   "before": 0,
+   "after": 0,
+   "leftover_pills_added": 0
+  },
+  "31": {
+   "before": 0,
+   "after": 0,
+   "leftover_pills_added": 0
+  },
+  "32": {
+   "before": 0,
+   "after": 0,
+   "leftover_pills_added": 0
+  },
+  "33": {
+   "before": 2,
+   "after": 2,
+   "leftover_pills_added": 0
+  },
+  "35": {
+   "before": 1,
+   "after": 1,
+   "leftover_pills_added": 0
+  },
+  "36": {
+   "before": 2,
+   "after": 2,
+   "leftover_pills_added": 0
+  },
+  "37": {
+   "before": 2,
+   "after": 2,
+   "leftover_pills_added": 0
+  },
+  "38": {
+   "before": 0,
+   "after": 0,
+   "leftover_pills_added": 0
+  },
+  "39": {
+   "before": 6,
+   "after": 6,
+   "leftover_pills_added": 0
+  },
+  "40": {
+   "before": 0,
+   "after": 0,
+   "leftover_pills_added": 0
+  },
+  "41": {
+   "before": 0,
+   "after": 0,
+   "leftover_pills_added": 0
+  },
+  "42": {
+   "before": 2,
+   "after": 2,
+   "leftover_pills_added": 0
+  },
+  "43": {
+   "before": 0,
+   "after": 0,
+   "leftover_pills_added": 0
+  },
+  "45": {
+   "before": 7,
+   "after": 7,
+   "leftover_pills_added": 0
+  },
+  "46": {
+   "before": 13,
+   "after": 13,
+   "leftover_pills_added": 0
+  },
+  "47": {
+   "before": 8,
+   "after": 8,
+   "leftover_pills_added": 0
+  },
+  "48": {
+   "before": 13,
+   "after": 13,
+   "leftover_pills_added": 0
+  },
+  "49": {
+   "before": 2,
+   "after": 2,
+   "leftover_pills_added": 0
+  },
+  "50": {
+   "before": 0,
+   "after": 0,
+   "leftover_pills_added": 0
+  },
+  "51": {
+   "before": 5,
+   "after": 5,
+   "leftover_pills_added": 0
+  },
+  "52": {
+   "before": 0,
+   "after": 0,
+   "leftover_pills_added": 0
+  },
+  "53": {
+   "before": 0,
+   "after": 0,
+   "leftover_pills_added": 0
+  },
+  "54": {
+   "before": 0,
+   "after": 0,
+   "leftover_pills_added": 0
+  },
+  "55": {
+   "before": 0,
+   "after": 0,
+   "leftover_pills_added": 0
+  },
+  "56": {
+   "before": 1,
+   "after": 1,
+   "leftover_pills_added": 0
+  },
+  "57": {
+   "before": 2,
+   "after": 2,
+   "leftover_pills_added": 0
+  },
+  "58": {
+   "before": 5,
+   "after": 5,
+   "leftover_pills_added": 0
+  }
+ },
+ "coverage": {
+  "masks_total": 176,
+  "pins_total": 342,
+  "method": "pill detection + OCR passes + residual white-label detector; noisy OCR boxes on metal background were pruned; final OCR leak check over all pages = 0 readable label words; manual masks added on pages 17, 19, 39",
+  "palette": {
+   "dark": "bg #0a0609 card #150b12 crimson #d3172f/#8a0f25 gold #e0b45c blue #5b8cff cover #14070d numbers #f0c36a glow #ff2740",
+   "light": "bg #f4f1f3 crimson #a60f2a/#6f0a1e gold #8a5d0c blue #1d4ed8 cover #14070d"
+  }
+ }
+}
