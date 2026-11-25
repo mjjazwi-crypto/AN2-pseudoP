@@ -5,6 +5,18 @@
 <meta name="theme-color" content="#09060b">
 <meta name="theme-color" content="#0a0609">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script>
+(function(){
+  var tg=window.Telegram&&Telegram.WebApp; if(!tg)return;
+  try{tg.ready();tg.expand();tg.disableVerticalSwipes&&tg.disableVerticalSwipes();}catch(e){}
+  var r=document.documentElement.style;
+  function sync(){r.setProperty('--app-h',(tg.viewportStableHeight||innerHeight)+'px');}
+  tg.onEvent('viewportChanged',sync);tg.onEvent('fullscreenChanged',sync);addEventListener('resize',sync);sync();
+  try{if(tg.isVersionAtLeast&&tg.isVersionAtLeast('8.0')&&!tg.isFullscreen&&tg.requestFullscreen)tg.requestFullscreen();}catch(e){}
+  tg.onEvent('fullscreenFailed',function(){try{tg.expand();}catch(e){}});
+})();
+</script>
 <title>Pseudo practical | اختبار تشريح عملي</title>
 <link rel="icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +27,7 @@
 :root[data-theme=dark]{--bg:#0a0609;--card:#150b12;--line:#3b1b27;--tx:#f5ecee;--mu:#bda7ae;--acc:#d3172f;--acc2:#8a0f25;--gold:#e0b45c;--blue:#5b8cff;--cover:#14070d;--num:#f0c36a;--ok:#3fd6a0;--bad:#ff5a76;--glow:#ff2740;--ring:#fff;--hdr:#0a0609;color-scheme:dark}
 *{box-sizing:border-box;margin:0}
 html{-webkit-text-size-adjust:100%}
-body{background:radial-gradient(900px 420px at 100% -8%,color-mix(in srgb,var(--acc) 16%,transparent),transparent),radial-gradient(800px 420px at 0% 108%,color-mix(in srgb,var(--blue) 14%,transparent),transparent),var(--bg);color:var(--tx);font:16px/1.6 Cairo,system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100dvh;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);overflow-x:hidden}
+body{background:radial-gradient(900px 420px at 100% -8%,color-mix(in srgb,var(--acc) 16%,transparent),transparent),radial-gradient(800px 420px at 0% 108%,color-mix(in srgb,var(--blue) 14%,transparent),transparent),var(--bg);color:var(--tx);font:16px/1.6 Cairo,system-ui,-apple-system,"Segoe UI",sans-serif;padding:0 env(safe-area-inset-right) 0 env(safe-area-inset-left);overflow-x:hidden}
 .en{direction:ltr;unicode-bidi:isolate;display:inline-block}
 .wrap{max-width:1500px;margin:auto;padding:14px}
 header{display:flex;align-items:center;gap:12px;padding:12px 14px;margin:0 0 14px;border-radius:16px;border:1px solid var(--gold);background:linear-gradient(90deg,color-mix(in srgb,var(--hdr) 82%,transparent),color-mix(in srgb,var(--hdr) 55%,transparent)),url(images/banner.webp) center/cover}
@@ -62,6 +74,9 @@ input[type=text]{direction:ltr;width:100%;min-height:48px;padding:8px 12px;borde
 .score{font-size:2.4rem;font-weight:800}
 .hide{display:none!important}
 .note{color:var(--mu);font-size:.9rem}
+/* Telegram fullscreen fix */
+html,body{width:100%;min-height:var(--app-h,100dvh)}
+body{padding-top:calc(max(env(safe-area-inset-top),var(--tg-safe-area-inset-top,0px)) + var(--tg-content-safe-area-inset-top,0px));padding-bottom:max(env(safe-area-inset-bottom),var(--tg-safe-area-inset-bottom,0px))}
 </style>
 </head>
 <body>
