@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="theme-color" content="#09060b">
+<meta name="theme-color" content="#0a0609">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script>
+(function(){
+  var tg=window.Telegram&&Telegram.WebApp; if(!tg)return;
+  try{tg.ready();tg.expand();tg.disableVerticalSwipes&&tg.disableVerticalSwipes();}catch(e){}
+  var r=document.documentElement.style;
+  function sync(){r.setProperty('--app-h',(tg.viewportStableHeight||innerHeight)+'px');}
+  tg.onEvent('viewportChanged',sync);tg.onEvent('fullscreenChanged',sync);addEventListener('resize',sync);sync();
+  try{if(tg.isVersionAtLeast&&tg.isVersionAtLeast('8.0')&&!tg.isFullscreen&&tg.requestFullscreen)tg.requestFullscreen();}catch(e){}
+  tg.onEvent('fullscreenFailed',function(){try{tg.expand();}catch(e){}});
+})();
+</script>
+<title>Pseudo practical | اختبار تشريح عملي</title>
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f1f3;--card:#fff;--line:#dccdd3;--tx:#1b0f15;--mu:#5e4a53;--acc:#a60f2a;--acc2:#6f0a1e;--gold:#8a5d0c;--blue:#1d4ed8;--cover:#14070d;--num:#f0c36a;--ok:#0b7f5a;--bad:#c4183c;--glow:#ff2740;--ring:#fff;--hdr:#f4f1f3;color-scheme:light}
+:root[data-theme=dark]{--bg:#0a0609;--card:#150b12;--line:#3b1b27;--tx:#f5ecee;--mu:#bda7ae;--acc:#d3172f;--acc2:#8a0f25;--gold:#e0b45c;--blue:#5b8cff;--cover:#14070d;--num:#f0c36a;--ok:#3fd6a0;--bad:#ff5a76;--glow:#ff2740;--ring:#fff;--hdr:#0a0609;color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+body{background:radial-gradient(900px 420px at 100% -8%,color-mix(in srgb,var(--acc) 16%,transparent),transparent),radial-gradient(800px 420px at 0% 108%,color-mix(in srgb,var(--blue) 14%,transparent),transparent),var(--bg);color:var(--tx);font:16px/1.6 Cairo,system-ui,-apple-system,"Segoe UI",sans-serif;padding:0 env(safe-area-inset-right) 0 env(safe-area-inset-left);overflow-x:hidden}
+.en{direction:ltr;unicode-bidi:isolate;display:inline-block}
+.wrap{max-width:1500px;margin:auto;padding:14px}
+header{display:flex;align-items:center;gap:12px;padding:12px 14px;margin:0 0 14px;border-radius:16px;border:1px solid var(--gold);background:linear-gradient(90deg,color-mix(in srgb,var(--hdr) 82%,transparent),color-mix(in srgb,var(--hdr) 55%,transparent)),url(images/banner.webp) center/cover}
+header img{width:46px;height:46px;border-radius:50%;border:2px solid var(--gold)}
+header h1{font:700 1.7rem/1.2 'UnifrakturCook',Cairo,serif;flex:1;color:var(--tx);direction:ltr;text-align:start}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer;min-height:44px;min-width:44px;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:8px 16px}
+button:focus-visible,input:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+button.pri{background:linear-gradient(135deg,#c1182c,#6c0a18);color:#fff;border:1px solid var(--gold);font-weight:600}
+button:disabled{opacity:.45;cursor:not-allowed}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:6px}
+.card h3{font-size:1.05rem}.card{border-top:2px solid var(--gold)}.card .ar{color:var(--mu)}.card .meta{color:var(--mu);font-size:.9rem}
+.card .row{display:flex;gap:8px;margin-top:auto;padding-top:10px}.card .row button{flex:1}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.bar .sp{flex:1}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.seg button{border:0;border-radius:0;background:transparent}.seg button[aria-pressed=true]{background:var(--blue);color:#fff}
+.card{border-top:3px solid var(--acc)}
+.card h3{color:var(--gold)}
+.stage{display:grid;grid-template-columns:1fr;gap:14px;align-items:start}
+@media(min-width:900px){.stage{grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr)}}
+.imgbox{position:relative;container-type:inline-size;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;line-height:0;margin-inline:auto;width:100%}
+@media(min-width:900px){.imgbox{max-width:calc((100dvh - 150px) * var(--ar,.7))}}
+.imgbox img{width:100%;height:auto;display:block}
+.pin{position:absolute;background:var(--cover);color:var(--num);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--gold) 70%,transparent);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:2.4cqw;line-height:1;border-radius:.6cqw;border:0;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--num) 55%,transparent);padding:0;min-width:0;min-height:0;overflow:hidden}
+.mask{position:absolute;background:var(--cover);pointer-events:none;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--num) 30%,transparent)}
+.pin.target{background:var(--cover);z-index:3;box-shadow:0 0 0 .5cqw var(--ring),0 0 0 .9cqw var(--gold),0 0 3cqw 1.6cqw var(--glow);animation:pulse 1.4s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 .5cqw var(--ring),0 0 0 .9cqw var(--gold),0 0 4.5cqw 2.4cqw var(--glow)}}
+@media(prefers-reduced-motion:reduce){.pin.target{animation:none}}
+.pin.open{background:var(--card);color:var(--tx);box-shadow:0 0 0 .3cqw var(--gold);font-size:1.9cqw;font-weight:600;white-space:nowrap;direction:ltr}
+.study .pin{cursor:pointer;min-width:3.4cqw}
+.peek{cursor:pointer}
+.pin.peek.open{background:transparent;color:transparent;box-shadow:0 0 0 .3cqw var(--gold);font-size:0}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:12px}
+.q{font-size:1.1rem;font-weight:600}
+.opts{display:grid;gap:8px}
+.opt{text-align:start;direction:ltr;min-height:48px}
+.opt.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 18%,var(--card))}
+.opt.bad{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 18%,var(--card))}
+input[type=text]{direction:ltr;width:100%;min-height:48px;padding:8px 12px;border-radius:12px;border:1px solid var(--line);background:var(--bg)}
+.fb{min-height:1.6em;font-weight:600}.fb.ok{color:var(--ok)}.fb.bad{color:var(--bad)}
+.prog{height:6px;background:var(--line);border-radius:9px;overflow:hidden}.prog i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),var(--gold));width:0}
+.score{font-size:2.4rem;font-weight:800}
+.hide{display:none!important}
+.note{color:var(--mu);font-size:.9rem}
+/* Telegram fullscreen fix */
+html,body{width:100%;min-height:var(--app-h,100dvh)}
+body{padding-top:calc(max(env(safe-area-inset-top),var(--tg-safe-area-inset-top,0px)) + var(--tg-content-safe-area-inset-top,0px));padding-bottom:max(env(safe-area-inset-bottom),var(--tg-safe-area-inset-bottom,0px))}
+
+/* ---- random quiz ---- */
+.rndc{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:0 0 14px;padding:16px;border-radius:16px;border:1px solid var(--gold);
+  background:linear-gradient(135deg,color-mix(in srgb,var(--acc) 18%,var(--card)),var(--card))}
+.rndc div{flex:1;min-width:200px}
+.rndc b{display:block;font-size:1.2rem;color:var(--gold)}
+.rndc span{color:var(--mu);font-size:.9rem}
+.rp{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:12px 0}
+.rp h3{font-size:1rem;margin-bottom:10px;color:var(--gold);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.rp h3 small{color:var(--mu);font-weight:400;font-size:.85rem;margin-inline-start:auto}
+.rp .hint{color:var(--mu);font-size:.85rem;margin-top:8px}
+.secs{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.sec{display:flex;align-items:center;gap:10px;width:100%;text-align:start;background:transparent;padding:10px 12px;min-height:52px}
+.sec .ck{width:22px;height:22px;border-radius:7px;border:2px solid var(--line);flex:none;display:flex;align-items:center;justify-content:center;font-size:14px;line-height:1;color:transparent}
+.sec .nm2{flex:1;min-width:0}
+.sec .nm2 small,.sec>small{color:var(--mu);font-size:.85rem;margin-inline-start:6px}
+.sec[aria-pressed=true]{border-color:var(--blue);background:color-mix(in srgb,var(--blue) 10%,transparent)}
+.sec[aria-pressed=true] .ck{background:var(--blue);border-color:var(--blue);color:#fff}
+.rchips{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.rchip{border-radius:999px;background:transparent;padding:6px 16px;font-weight:600}
+.rchip[aria-pressed=true]{background:linear-gradient(135deg,#c1182c,#6c0a18);border-color:var(--gold);color:#fff}
+input.numin{width:92px;text-align:center;direction:ltr;min-height:44px;padding:6px;border-radius:12px;border:1px solid var(--line);background:var(--bg)}
+.tgl{display:flex;align-items:center;gap:10px;width:100%;text-align:start;background:transparent;padding:10px 12px;margin-top:8px;min-height:52px}
+.tgl .sw{width:40px;height:24px;border-radius:999px;background:var(--line);position:relative;flex:none;transition:.15s}
+.tgl .sw::after{content:"";position:absolute;top:3px;inset-inline-start:3px;width:18px;height:18px;border-radius:50%;background:var(--mu);transition:.15s}
+.tgl[aria-pressed=true] .sw{background:var(--ok)}
+.tgl[aria-pressed=true] .sw::after{inset-inline-start:19px;background:#fff}
+.tgl small{color:var(--mu);display:block;font-size:.8rem}
+.linkbtn{background:none;border:0;color:var(--blue);padding:4px 6px;min-height:36px;font-size:.85rem;text-decoration:underline}
+.startbar{position:sticky;bottom:calc(10px + env(safe-area-inset-bottom));display:flex;justify-content:center;padding:8px 0;z-index:5}
+.startbar button{min-width:180px;box-shadow:0 8px 28px #0008}
+.tmr{font-weight:700;direction:ltr;padding:2px 12px;border:1px solid var(--gold);border-radius:999px;color:var(--gold);min-width:48px;text-align:center}
+.tmr.low{color:var(--bad);border-color:var(--bad)}
+.tprog{margin:-4px 0 8px;height:4px}
+.tprog i{transition:width .2s linear;background:linear-gradient(90deg,var(--bad),var(--gold))}
+.stag{display:inline-block;padding:1px 10px;border:1px solid var(--line);border-radius:999px;color:var(--mu);font-size:.8rem;direction:ltr}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.stat{border:1px solid var(--line);border-radius:12px;padding:8px;text-align:center}
+.stat b{display:block;font-size:1.4rem;line-height:1.2;direction:ltr}
+.stat span{color:var(--mu);font-size:.85rem}
+.brk{display:grid;grid-template-columns:1fr auto;gap:4px 10px;align-items:center;text-align:start}
+.brk .bar2{grid-column:1/-1;height:6px;background:var(--line);border-radius:9px;overflow:hidden}
+.brk .bar2 i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),var(--gold))}
+.ans{direction:ltr;text-align:left;font-weight:600}
+.imgerr{padding:22px 12px;text-align:center;color:var(--bad);line-height:1.6;background:var(--card)}
+.okc{color:var(--ok)}.badc{color:var(--bad)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><img src="images/logo.webp" alt="" width="46" height="46"><h1>Pseudo practical</h1>
+<button id="theme" aria-label="تبديل الثيم">🌓</button></header>
+<main id="app"></main>
+</div>
+<script>
+"use strict";
+const $=(s,e=document)=>e.querySelector(s), app=$('#app');
+let DATA=[], S=null, MODE='mcq', CFG=null, TMR=null;
+const WRONG_KEY='pp_wrong_v1', CFG_KEY='pp_rnd_cfg_v1', TIMEOUT='__timeout__';
+/* ---------- theme ---------- */
+(function(){let t=null;try{t=localStorage.getItem('pp-theme')}catch(e){}
+ if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+ document.documentElement.dataset.theme=t;
+ $('#theme').onclick=()=>{const n=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=n;try{localStorage.setItem('pp-theme',n)}catch(e){}};})();
+/* ---------- helpers ---------- */
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+const lsGet=(k,d)=>{try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}};
+const lsSet=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+const fmtTime=ms=>{const s=Math.max(0,Math.round(ms/1000)),m=Math.floor(s/60);return m+':'+(s%60<10?'0':'')+(s%60)};
+function norm(s){return String(s||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9 ]+/g,' ')
+ .replace(/\bperoneus\b/g,'fibularis').replace(/\bperoneal\b/g,'fibular').replace(/\s+/g,' ').trim()}
+function lev(a,b){ /* تبديل حرفين متجاورين = خطأ واحد */
+ if(a===b)return 0;const m=a.length,n=b.length;if(!m)return n;if(!n)return m;const d=[];
+ for(let i=0;i<=m;i++)d[i]=[i];for(let j=1;j<=n;j++)d[0][j]=j;
+ for(let i=1;i<=m;i++)for(let j=1;j<=n;j++){const c=a[i-1]===b[j-1]?0:1;
+  d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+c);
+  if(i>1&&j>1&&a[i-1]===b[j-2]&&a[i-2]===b[j-1])d[i][j]=Math.min(d[i][j],d[i-2][j-2]+1)}
+ return d[m][n]}
+/* ---------- هوية التركيب ---------- */
+const STOP=new Set('of the and a an muscle muscles bone bones'.split(' '));
+const SYN={foramina:'foramen',interossei:'interosseus',interosseous:'interosseus',testes:'testis',arteries:'artery',veins:'vein',nerves:'nerve',vessels:'vessel',lobes:'lobe',tubules:'tubule',ductules:'ductule',ligaments:'ligament',tendons:'tendon',plexuses:'plexus',sinuses:'sinus',glands:'gland',cells:'cell',canals:'canal',fissures:'fissure',processes:'process',cartilages:'cartilage'};
+function tokens(s){const t=norm(String(s||'').replace(/\([^)]*\)/g,' ').replace(/&/g,' and '));if(!t)return[];
+ return t.split(' ').map(w=>SYN[w]||w).filter(w=>w&&!STOP.has(w))}
+const subset=(a,b)=>a.every(x=>b.includes(x));
+const confusable=(a,b)=>subset(a,b)||subset(b,a);  /* مطابق أو جزء من الآخر: Head / Head of femur */
+const KEY=new Set(('internal external anterior posterior superior inferior medial lateral left right deep superficial proximal distal dorsal ventral '+
+ 'major minor middle upper lower long short artery vein nerve tendon ligament greater lesser common frontal parietal temporal occipital maxillary mandibular sphenoid ethmoid '+
+ 'nasal oral cervical thoracic lumbar sacral cranial facial optic ocular first second third fourth fifth sixth seventh eighth ninth tenth').split(' '));
+/* 0 خطأ، 1 مطابق، 2 مطابق مع خطأ إملائي بسيط */
+function matchLevel(given,target){const a=tokens(given),b=tokens(target);if(!a.length||!b.length)return 0;
+ if(a.slice().sort().join(' ')===b.slice().sort().join(' '))return 1;
+ if(a.length!==b.length)return 0;let edits=0;
+ for(let i=0;i<a.length;i++){if(a[i]===b[i])continue;
+  if(KEY.has(a[i])||KEY.has(b[i])||/\d/.test(a[i]+b[i]))return 0;
+  if(a[i].indexOf(b[i])===0||b[i].indexOf(a[i])===0)return 0;  /* temporal / temporalis */
+  const l=Math.max(a[i].length,b[i].length);if(l<5)return 0;
+  const d=lev(a[i],b[i]);if(d>(l>=9?2:1))return 0;edits+=d}
+ return edits<=2?2:0}
+const QUAL=/^(isolated|lateral|medial|deep|superficial|distal|proximal|dorsum|dorsal|left|right|anterior|posterior|plantar|.*\bview\b.*|.*\blabel\b.*|at\b.*)$/i;
+function label(name){let s=String(name||'').trim(),prev;
+ do{prev=s;s=s.replace(/\s*\(([^()]*)\)\s*$/,(m,inner)=>QUAL.test(inner.trim())?'':m).trim()}while(s!==prev&&s);
+ return s||String(name||'').trim()}
+function accepted(name,alt){const out=[name,label(name),name.replace(/\([^)]*\)/g,' ').replace(/\s+/g,' ').trim(),name.replace(/[()]/g,' ').replace(/\s+/g,' ').trim()];
+ const nt=tokens(name).length;
+ (alt||[]).forEach(x=>{const t=tokens(x);if(!t.length||QUAL.test(String(x).trim()))return;if(t.length<2&&nt>=2)return;out.push(x)});return out}
+function judge(p,txt){const g=String(txt||'').trim();if(!g)return 0;let best=0;
+ for(const a of p.acc){if(String(a).trim().toLowerCase()===g.toLowerCase())return 1;const r=matchLevel(g,a);if(r===1)return 1;if(r===2)best=2}
+ return best}
+/* ---------- data ---------- */
+const SEC=id=>DATA.find(x=>x.id===id);
+const live=()=>DATA.filter(d=>d.items.length);
+function prep(){DATA.forEach(d=>{d.id=String(d.id);d.pages=Array.isArray(d.pages)?d.pages:[];d.items=[];d.pins=[];
+ d.pages.forEach((pg,pi)=>{pg.pins=Array.isArray(pg.pins)?pg.pins:[];
+  pg.pins.forEach(p=>{p.name=String(p.name==null?'':p.name).trim();
+   const alt=Array.isArray(p.alt)?p.alt.map(String):[];
+   p.lab=label(p.name);p.tk=tokens(p.name);if(!p.tk.length&&p.name)p.tk=[p.name.toLowerCase()];p.acc=accepted(p.name,alt);
+   if(p.name){d.pins.push(p);d.items.push({sid:d.id,pi,n:p.n,key:d.id+'|'+pg.img+'|'+p.n,ob:null,t0:0})}})})})}
+const count=d=>d.items.length;
+const preloaded={};const preloadImg=s=>{if(s&&!preloaded[s]){const i=new Image();i.src=s;preloaded[s]=1}};
+/* ---------- سجل الأخطاء ---------- */
+const wrongMap=()=>lsGet(WRONG_KEY,{})||{};
+function wrongCount(ids){const W=wrongMap();let c=0;live().forEach(d=>{if(ids&&!ids.includes(d.id))return;d.items.forEach(it=>{if(W[it.key])c++})});return c}
+function recordResult(it,ok){const W=wrongMap();if(ok){delete W[it.key]}else W[it.key]=(W[it.key]||0)+1;lsSet(WRONG_KEY,W)}
+/* ---------- timer ---------- */
+function stopTimer(){if(TMR){clearInterval(TMR);TMR=null}}
+function startTimer(sec,end){stopTimer();if(!sec)return;
+ const tick=()=>{const left=Math.max(0,end-Date.now()),s=Math.ceil(left/1000),tm=$('#tmr'),tf=$('#tfill');
+  if(tm){tm.textContent=s;tm.classList.toggle('low',s<=5)}if(tf)tf.style.width=(left/(sec*1000)*100)+'%';
+  if(left<=0){stopTimer();onTimeout()}};
+ tick();if(!S.cur.ans&&left0(end))TMR=setInterval(tick,200)}
+const left0=end=>end>Date.now();
+function onTimeout(){if(!S||S.t!=='quiz'||S.done||!S.cur||S.cur.ans)return;
+ const inp=$('#ans');if(S.mode==='type'&&inp&&inp.value.trim()){answer(inp.value);return}
+ answer('',null,true)}
+/* ---------- pins / image ---------- */
+function pinsHTML(page,mode,targetN,openAll,openSet){
+ const m=mode==='study'?'':(page.masks||[]).map(k=>`<i class="mask" style="left:${k.x}%;top:${k.y}%;width:${k.w}%;height:${k.h}%"></i>`).join('');
+ return m+page.pins.map(p=>{const t=p.n===targetN,o=openAll||(openSet&&openSet.has(p.n));
+  return `<button type="button" class="pin ${t?'target':'dim'} ${o?'open':''}" data-n="${p.n}" style="left:${p.x}%;top:${p.y}%;width:${p.w}%;height:${p.h}%" aria-label="${o?esc(p.name):'pin '+p.n}">${o?`<span class="en">${esc(p.name)}</span>`:p.n}</button>`}).join('')+(page.peeks||[]).map(k=>{const o=mode==='study'?(openAll||(openSet&&openSet.has(k.n))):false;
+  return `<button type="button" class="pin peek ${o?'open':''}" data-n="${k.n}" style="left:${k.x}%;top:${k.y}%;width:${k.w}%;height:${k.h}%" aria-label="${o?'اسم':'اضغط للإظهار'}">${o||mode!=='study'?'':k.n}</button>`}).join('')}
+function imgHTML(page,extra,mode,targetN,openAll,openSet){
+ return `<div class="imgbox ${mode==='study'?'study':''}" id="ib" style="--ar:${page.ar||.7}">
+  <img src="${page.img}" alt="صورة المجسم" loading="lazy" decoding="async" onload="this.parentNode.style.setProperty('--ar',this.naturalWidth/this.naturalHeight)">${pinsHTML(page,mode,targetN,openAll,openSet)}</div>`}
+/* ---------- home ---------- */
+function goHome(){if(S&&S.t==='quiz'&&!S.done&&S.log.length&&!confirm('إنهاء الاختبار والعودة للمجسمات؟'))return;home()}
+function home(){stopTimer();S=null;
+ app.innerHTML=`<p class="note" style="margin-bottom:12px">اختر مجسمًا ثم اختبر نفسك أو ذاكر.</p>
+ <div class="rndc"><div><b>كويز عشوائي</b><span>اختر المجسمات وعدد الأسئلة والوقت، وابدأ اختبارًا مخصصًا لك.</span></div><button class="pri" data-act="rsetup">إعداد الكويز</button></div>
+ <div class="grid">`+DATA.map(d=>{
+  const n=count(d),dis=n===0;return `<article class="card"><h3 class="en">${esc(d.en)}</h3><div class="ar">${esc(d.ar)}</div>
+  <div class="meta">${d.pages.length} صور · ${n} سؤال${dis?' — لا توجد صور بعد':''}</div>
+  <div class="row"><button class="pri" data-quiz="${d.id}" ${dis?'disabled':''}>اختبار</button><button data-study="${d.id}" ${dis?'disabled':''}>مذاكرة</button></div></article>`}).join('')+`</div>`}
+/* ---------- random quiz: setup ---------- */
+function loadCfg(){const c=lsGet(CFG_KEY,null)||{},ids=live().map(d=>d.id);
+ let secs=(Array.isArray(c.secs)?c.secs:ids).filter(id=>ids.includes(id));if(!secs.length)secs=ids.slice();
+ CFG={secs,count:(typeof c.count==='number'&&(c.count===-1||c.count>0))?c.count:20,timer:[0,15,30,45,60].includes(c.timer)?c.timer:0,
+  balanced:c.balanced!==false,onlyWrong:!!c.onlyWrong};if(c.mode==='type'||c.mode==='mcq')MODE=c.mode}
+const saveCfg=()=>lsSet(CFG_KEY,Object.assign({mode:MODE},CFG));
+const selSecs=()=>live().filter(d=>CFG.secs.includes(d.id));
+function poolItems(){const W=CFG.onlyWrong?wrongMap():null,out=[];selSecs().forEach(d=>d.items.forEach(it=>{if(!W||W[it.key])out.push(it)}));return out}
+function renderSetup(){stopTimer();S={t:'setup'};if(!CFG)loadCfg();
+ const secs=live().map(d=>`<button type="button" class="sec" data-act="rsec" data-id="${esc(d.id)}" aria-pressed="false"><span class="ck">✓</span><span class="nm2"><b class="en">${esc(d.en)}</b><small>${esc(d.ar)}</small></span><small class="en">${count(d)}</small></button>`).join('');
+ const counts=[10,20,30,50].map(n=>`<button type="button" class="rchip en" data-act="rcount" data-v="${n}" aria-pressed="false">${n}</button>`).join('')+`<button type="button" class="rchip" data-act="rcount" data-v="-1" aria-pressed="false">الكل</button>`;
+ const timers=`<button type="button" class="rchip" data-act="rtimer" data-v="0" aria-pressed="false">بدون</button>`+[15,30,45,60].map(n=>`<button type="button" class="rchip" data-act="rtimer" data-v="${n}" aria-pressed="false"><span class="en">${n}</span> ث</button>`).join('');
+ app.innerHTML=`<div class="bar"><button id="back">← المجسمات</button><span class="sp"></span><b>كويز عشوائي</b></div>
+ <div class="rp"><h3>المجسمات <small id="rsecn"></small></h3><div class="bar" style="margin:0 0 8px"><button type="button" class="linkbtn" data-act="rall">تحديد الكل</button><button type="button" class="linkbtn" data-act="rnone">إلغاء التحديد</button></div><div class="secs">${secs}</div></div>
+ <div class="rp"><h3>عدد الأسئلة <small id="ravail"></small></h3><div class="rchips">${counts}<input class="numin" id="rcount" type="number" inputmode="numeric" min="1" placeholder="رقم" aria-label="عدد الأسئلة"></div></div>
+ <div class="rp"><h3>نمط الإجابة</h3><div class="seg"><button type="button" data-act="rmode" data-mode="mcq">اختيارات</button><button type="button" data-act="rmode" data-mode="type">كتابة</button></div></div>
+ <div class="rp"><h3>الوقت لكل سؤال</h3><div class="rchips">${timers}</div><p class="hint">عند انتهاء الوقت يُحتسب السؤال خطأ وتظهر الإجابة الصحيحة.</p></div>
+ <div class="rp"><h3>خيارات إضافية</h3>
+  <button type="button" class="tgl" data-act="rbal" aria-pressed="false"><span class="sw"></span><span>توزيع متساوٍ على المجسمات<small>عدد متقارب من الأسئلة من كل مجسم محدد</small></span></button>
+  <button type="button" class="tgl" id="rwrongbtn" data-act="rwrong" aria-pressed="false"><span class="sw"></span><span>أسئلة أخطأت فيها سابقًا فقط<small id="rwn"></small></span></button>
+  <div style="margin-top:6px"><button type="button" class="linkbtn" data-act="rclear">مسح سجل الأخطاء</button></div></div>
+ <div class="startbar"><button class="pri" id="rstart" data-act="rstart">ابدأ</button></div>`;
+ $('#back').onclick=home;
+ const ci=$('#rcount');if(ci&&CFG.count>0&&![10,20,30,50].includes(CFG.count))ci.value=CFG.count;
+ syncSetup();window.scrollTo({top:0})}
+function syncSetup(){if(!S||S.t!=='setup')return;
+ const pool=poolItems().length,n=CFG.count<0?pool:Math.min(CFG.count,pool),q=s=>app.querySelectorAll(s);
+ q('[data-act="rsec"]').forEach(b=>b.setAttribute('aria-pressed',CFG.secs.includes(b.dataset.id)?'true':'false'));
+ let hit=false;q('[data-act="rcount"]').forEach(b=>{const on=+b.dataset.v===CFG.count;if(on)hit=true;b.setAttribute('aria-pressed',on?'true':'false')});
+ const inp=$('#rcount');if(inp&&hit&&document.activeElement!==inp)inp.value='';
+ q('[data-act="rtimer"]').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.v===CFG.timer?'true':'false'));
+ q('[data-act="rmode"]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.mode===MODE?'true':'false'));
+ const bal=$('[data-act="rbal"]'),wr=$('#rwrongbtn');
+ if(bal)bal.setAttribute('aria-pressed',CFG.balanced?'true':'false');if(wr)wr.setAttribute('aria-pressed',CFG.onlyWrong?'true':'false');
+ const wc=wrongCount(CFG.secs);$('#rwn').textContent=wc?('لديك '+wc+' سؤال في المجسمات المحددة'):'لا توجد أخطاء مسجلة بعد';
+ if(wr)wr.disabled=!wc&&!CFG.onlyWrong;
+ $('#rsecn').textContent=CFG.secs.length+' / '+live().length;
+ $('#ravail').textContent='المتاح: '+pool+(CFG.onlyWrong?' (من أخطائك)':'');
+ const st=$('#rstart');st.disabled=n<1;st.textContent=n<1?'اختر مجسمًا أولًا':'ابدأ · '+n+' سؤال'}
+/* ---------- random quiz: build ---------- */
+function uniqFirst(list){const seen={},u=[],d=[];
+ shuffle(list).forEach(it=>{const p=SEC(it.sid).pages[it.pi].pins.find(x=>x.n===it.n),k=it.sid+'|'+p.tk.slice().sort().join(' ');if(seen[k])d.push(it);else{seen[k]=1;u.push(it)}});
+ return{u,d}}
+function pickQuestions(){const W=CFG.onlyWrong?wrongMap():null;
+ const parts=selSecs().map(d=>uniqFirst(d.items.filter(it=>!W||W[it.key])));
+ const total=parts.reduce((a,p)=>a+p.u.length+p.d.length,0),N=CFG.count<0?total:Math.min(CFG.count,total);let out=[];
+ if(CFG.balanced){['u','d'].forEach(ph=>{const lists=shuffle(parts.map(p=>p[ph].slice()));let moved=true;
+   while(out.length<N&&moved){moved=false;for(let i=0;i<lists.length&&out.length<N;i++)if(lists[i].length){out.push(lists[i].shift());moved=true}}})}
+ else{let U=[],D=[];parts.forEach(p=>{U=U.concat(p.u);D=D.concat(p.d)});out=shuffle(U).concat(shuffle(D)).slice(0,N)}
+ return shuffle(out)}
+function beginQuiz(items,run){if(!items.length){alert('لا توجد أسئلة مطابقة للإعدادات.');return}
+ items.forEach(it=>{it.ob=null;it.t0=0});
+ S={t:'quiz',kind:run.kind,secId:run.secId,title:run.title,timer:run.timer,retry:run.retry,mode:MODE,q:items,i:0,right:0,log:[],wrong:[],done:false,T0:Date.now()};
+ items.slice(0,3).forEach(it=>preloadImg(SEC(it.sid).pages[it.pi].img));renderQ()}
+function startQuiz(id){const d=SEC(id);if(!d||!d.items.length)return;
+ beginQuiz(shuffle(d.items),{kind:'sec',secId:id,title:d.en,timer:0,retry:false})}
+function startRandom(){if(!CFG)loadCfg();saveCfg();beginQuiz(pickQuestions(),{kind:'rnd',secId:null,title:'كويز عشوائي',timer:CFG.timer,retry:false})}
+function retryWrong(){const w=S.log.filter(l=>!l.ok).map(l=>l.it);if(!w.length)return;
+ beginQuiz(shuffle(w),{kind:S.kind,secId:S.secId,title:S.title,timer:S.timer,retry:true})}
+/* ---------- الخيارات ---------- */
+function buildOptions(it){const d=SEC(it.sid),pg=d.pages[it.pi],n=pg.pins.find(p=>p.n===it.n),picked=[],keys=[n.tk];
+ const can=x=>keys.every(k=>!confusable(x.tk,k));
+ const fill=(list,max)=>{for(const x of list){if(picked.length>=max)break;if(x.tk.length&&can(x)){picked.push(x.lab);keys.push(x.tk)}}};
+ fill(shuffle(pg.pins.filter(p=>p.name)),2);fill(shuffle(d.pins),3);
+ if(picked.length<3)fill(shuffle(DATA.filter(s=>s!==d).flatMap(s=>s.pins)),3);
+ if(picked.length<3){for(const x of shuffle(d.pins)){if(picked.length>=3)break;if(x.lab!==n.lab&&!picked.includes(x.lab)&&x.tk.join(' ')!==n.tk.join(' '))picked.push(x.lab)}}
+ const list=shuffle([n.lab].concat(picked));return{list,ci:list.indexOf(n.lab)}}
+/* ---------- quiz ---------- */
+function pinOf(it){const d=SEC(it.sid),pg=d.pages[it.pi];return{d,pg,pin:pg.pins.find(p=>p.n===it.n)}}
+function renderQ(){stopTimer();const it=S.q[S.i];if(!it)return results();const{d,pg,pin}=pinOf(it);
+ preloadImg(S.q[S.i+1]&&pinOf(S.q[S.i+1]).pg.img);
+ if(S.mode==='mcq'&&!it.ob)it.ob=buildOptions(it);
+ if(S.timer&&!it.t0)it.t0=Date.now();
+ S.cur={pin,it,opts:S.mode==='mcq'?it.ob.list:null,ci:S.mode==='mcq'?it.ob.ci:-1,ans:false};
+ const tag=(S.kind==='rnd'||S.secId==='all')?`<span class="stag en">${esc(d.en)}</span>`:'';
+ app.innerHTML=`<div class="bar"><button id="back">← المجسمات</button><span class="en" style="font-weight:800">${esc(S.kind==='rnd'?'Random quiz':S.title)}</span><span class="sp"></span>
+  ${S.timer?`<span class="tmr" id="tmr">${S.timer}</span>`:''}
+  <div class="seg" role="group" aria-label="نمط الإجابة"><button data-m="mcq" aria-pressed="${S.mode==='mcq'}">اختيارات</button><button data-m="type" aria-pressed="${S.mode==='type'}">كتابة</button></div></div>
+  <div class="prog"><i style="width:${S.i/S.q.length*100}%"></i></div>${S.timer?`<div class="prog tprog"><i id="tfill" style="width:100%"></i></div>`:''}
+  <p class="note" style="margin:6px 0 10px">سؤال ${S.i+1} من ${S.q.length} ${tag}</p>
+  <div class="stage">${imgHTML(pg,'','quiz',pin.n)}
+  <section class="panel"><div class="q">ما اسم التركيب المضيء (رقم <span class="en">${pin.n}</span>)؟</div>
+  ${S.mode==='mcq'?`<div class="opts">${S.cur.opts.map((o,k)=>`<button class="opt" data-o="${k}">${esc(o)}</button>`).join('')}</div>`
+  :`<input id="ans" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="اكتب الاسم بالإنجليزية" aria-label="الإجابة"><button class="pri" id="chk">تحقق</button>`}
+  <div class="fb" id="fb" aria-live="polite"></div><button class="pri hide" id="next">التالي</button></section></div>`;
+ $('#back').onclick=goHome;
+ app.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>{if(S.cur.ans||S.mode===b.dataset.m)return;S.mode=MODE=b.dataset.m;renderQ()});
+ if(S.mode==='mcq')app.querySelectorAll('.opt').forEach(b=>b.onclick=()=>answer(S.cur.opts[b.dataset.o],+b.dataset.o));
+ else{$('#chk').onclick=()=>answer($('#ans').value);if(matchMedia('(pointer:fine)').matches)$('#ans').focus({preventScroll:true})}
+ $('#next').onclick=()=>{S.i++;renderQ()};
+ startTimer(S.timer,it.t0+S.timer*1000)}
+function answer(txt,k,timedOut){if(!S||S.t!=='quiz'||S.cur.ans)return;const p=S.cur.pin;
+ if(S.mode==='type'&&!timedOut&&!String(txt).trim())return;
+ S.cur.ans=true;stopTimer();
+ const r=timedOut?0:S.mode==='mcq'?(k===S.cur.ci?1:0):judge(p,txt);
+ const fb=$('#fb');S.cur.r=r;
+ if(r){S.right++;fb.className='fb ok';fb.innerHTML=(r===2?'صحيحة مع خطأ إملائي بسيط — الصحيح: ':'صحيح ✓ ')+`<span class="en">${esc(p.lab)}</span>`}
+ else{fb.className='fb bad';fb.innerHTML=(timedOut?'⏱ انتهى الوقت — الصحيح: ':'خطأ ✗ — الصحيح: ')+`<span class="en">${esc(p.lab)}</span>`}
+ S.log.push({it:S.cur.it,ok:!!r,given:timedOut?TIMEOUT:txt});recordResult(S.cur.it,!!r);
+ if(S.mode==='mcq')app.querySelectorAll('.opt').forEach(b=>{b.disabled=true;const i=+b.dataset.o;if(i===S.cur.ci)b.classList.add('ok');else if(i===k)b.classList.add('bad')});
+ else{const a=$('#ans');if(a)a.readOnly=true;$('#chk').classList.add('hide')}
+ const tg=$('.pin.target');if(tg){tg.classList.add('open');tg.innerHTML=`<span class="en">${esc(p.lab)}</span>`}
+ const nx=$('#next');nx.classList.remove('hide');nx.textContent=S.i+1<S.q.length?'التالي':'النتيجة';nx.focus()}
+document.addEventListener('keydown',e=>{
+ if(e.key==='Escape'&&S&&S.t!=='home'){e.preventDefault();goHome();return}
+ if(!S||S.t!=='quiz'||S.done)return;
+ if(e.key==='Enter'){if(S.cur&&S.cur.ans){if(document.activeElement!==$('#next'))$('#next').click()}else if(S.mode==='type'&&document.activeElement===$('#ans')){e.preventDefault();answer($('#ans').value)}return}
+ if(!S.cur.ans&&S.mode==='mcq'&&/^[1-9]$/.test(e.key)){const k=+e.key-1;if(k<S.cur.opts.length)answer(S.cur.opts[k],k)}});
+function results(){stopTimer();S.done=true;const n=S.q.length,pc=n?Math.round(S.right/n*100):0,wrong=S.log.filter(l=>!l.ok),el=Date.now()-S.T0;
+ const by={},order=[];S.log.forEach(l=>{const id=l.it.sid;if(!by[id]){by[id]={d:SEC(id),t:0,c:0};order.push(id)}by[id].t++;if(l.ok)by[id].c++});
+ const brk=order.length>1?`<div class="rp" style="width:100%"><h3>النتيجة حسب المجسم</h3>`+order.map(id=>{const b=by[id],r=Math.round(b.c/b.t*100);
+  return `<div class="brk"><span class="en">${esc(b.d.en)}</span><span class="en">${b.c}/${b.t} · ${r}%</span><div class="bar2"><i style="width:${r}%"></i></div></div>`}).join('')+`</div>`:'';
+ const again=S.kind==='rnd'?`<button class="pri" id="again">كويز عشوائي جديد</button><button id="edit">تعديل الإعدادات</button>`:`<button class="pri" id="again">إعادة الكل</button>`;
+ app.innerHTML=`<div class="panel" style="max-width:560px;margin:20px auto;text-align:center"><div class="score">${S.right} / ${n}</div><div style="font-size:1.4rem;font-weight:600">${pc}%</div>
+  <div class="stats"><div class="stat"><b class="okc">${S.right}</b><span>صحيحة</span></div><div class="stat"><b class="badc">${n-S.right}</b><span>خاطئة</span></div><div class="stat"><b>${fmtTime(el)}</b><span>الوقت</span></div></div>
+  ${brk}${again}<button id="redo" ${wrong.length?'':'disabled'}>إعادة الأخطاء (${wrong.length})</button>
+  <button id="rev" ${wrong.length?'':'disabled'}>مراجعة الأخطاء بالصورة</button><button id="h">المجسمات</button></div>`;
+ $('#again').onclick=()=>S.kind==='rnd'?startRandom():startQuiz(S.secId);
+ if(S.kind==='rnd')$('#edit').onclick=renderSetup;
+ $('#redo').onclick=retryWrong;$('#rev').onclick=()=>review(0);$('#h').onclick=home;window.scrollTo({top:0})}
+function review(k){const w=S.log.filter(l=>!l.ok),l=w[k],{d,pg,pin}=pinOf(l.it);
+ const mine=l.given===TIMEOUT?'انتهى الوقت':(String(l.given||'').trim()?l.given:'لم تُجب');
+ app.innerHTML=`<div class="bar"><button id="r0">← النتيجة</button><span class="sp"></span><span class="note">${k+1} / ${w.length}</span></div>
+  <div class="stage">${imgHTML(pg,'','quiz',pin.n)}<section class="panel"><div class="q">الإجابة الصحيحة (رقم <span class="en">${pin.n}</span>) ${S.kind==='rnd'?`<span class="stag en">${esc(d.en)}</span>`:''}</div>
+  <div class="score en" style="font-size:1.6rem">${esc(pin.lab)}</div><div class="ans badc">✗ ${esc(mine)}</div>${pin.alt&&pin.alt.length?`<div class="note">مرادفات: <span class="en">${esc(pin.alt.join(' / '))}</span></div>`:''}
+  <div class="bar"><button id="rp" ${k?'':'disabled'}>السابق</button><button class="pri" id="rn" ${k+1<w.length?'':'disabled'}>التالي</button></div></section></div>`;
+ const t=$('.pin.target');t.classList.add('open');t.innerHTML=`<span class="en">${esc(pin.lab)}</span>`;
+ $('#r0').onclick=results;$('#rp').onclick=()=>review(k-1);$('#rn').onclick=()=>review(k+1)}
+/* ---------- study ---------- */
+function startStudy(id){const d=SEC(id);S={t:'study',d,pi:0,all:false,open:new Set()};renderS()}
+function renderS(){const d=S.d,pg=d.pages[S.pi];
+ app.innerHTML=`<div class="bar"><button id="back">← المجسمات</button><span class="en" style="font-weight:800">${esc(d.en)}</span><span class="sp"></span>
+  <button id="tg" aria-pressed="${S.all}">${S.all?'إخفاء الكل':'إظهار الكل'}</button></div>
+  <div class="stage">${imgHTML(pg,'','study',0,S.all,S.open)}<section class="panel"><div class="q">اضغط على أي رقم لإظهار اسمه</div>
+  <div class="note">صورة ${S.pi+1} من ${d.pages.length} — ${pg.pins.length} تراكيب</div>
+  <div class="bar"><button id="sp" ${S.pi?'':'disabled'}>السابقة</button><button class="pri" id="sn" ${S.pi+1<d.pages.length?'':'disabled'}>التالية</button></div></section></div>`;
+ $('#back').onclick=home;$('#tg').onclick=()=>{S.all=!S.all;S.open.clear();renderS()};
+ $('#sp').onclick=()=>{S.pi--;S.open.clear();renderS()};$('#sn').onclick=()=>{S.pi++;S.open.clear();renderS()};
+ app.querySelectorAll('.pin').forEach(b=>b.onclick=()=>{const n=+b.dataset.n;S.open.has(n)?S.open.delete(n):S.open.add(n);renderS()})}
+/* ---------- events ---------- */
+app.addEventListener('click',e=>{
+ const q=e.target.closest('[data-quiz]'),s=e.target.closest('[data-study]'),a=e.target.closest('[data-act]');
+ if(q&&!q.disabled)return startQuiz(q.dataset.quiz);
+ if(s&&!s.disabled)return startStudy(s.dataset.study);
+ if(a&&!a.disabled){const act=a.dataset.act;if(!CFG)loadCfg();
+  if(act==='rsetup')return renderSetup();
+  if(!S||S.t!=='setup')return;
+  if(act==='rsec'){const i=CFG.secs.indexOf(a.dataset.id);if(i>-1)CFG.secs.splice(i,1);else CFG.secs.push(a.dataset.id)}
+  else if(act==='rall')CFG.secs=live().map(d=>d.id);
+  else if(act==='rnone')CFG.secs=[];
+  else if(act==='rcount')CFG.count=+a.dataset.v;
+  else if(act==='rtimer')CFG.timer=+a.dataset.v;
+  else if(act==='rmode')MODE=a.dataset.mode;
+  else if(act==='rbal')CFG.balanced=!CFG.balanced;
+  else if(act==='rwrong')CFG.onlyWrong=!CFG.onlyWrong;
+  else if(act==='rclear'){if(confirm('مسح سجل الأسئلة التي أخطأت فيها؟')){lsSet(WRONG_KEY,{});CFG.onlyWrong=false}}
+  else if(act==='rstart')return startRandom();
+  saveCfg();syncSetup();return}
+ const b=e.target.closest('.peek');if(b&&S&&S.t==='quiz')b.classList.toggle('open')});
+app.addEventListener('input',e=>{if(e.target&&e.target.id==='rcount'&&CFG){const v=parseInt(e.target.value,10);if(v>0){CFG.count=v;saveCfg();syncSetup()}}});
+/* صورة فشلت: نعيد المحاولة مرة، ثم نعرض رسالة بدل صورة فارغة */
+app.addEventListener('error',e=>{const t=e.target;if(!t||t.tagName!=='IMG'||!t.closest||!t.closest('.imgbox'))return;
+ if(!t.dataset.retry){t.dataset.retry='1';t.src=t.src+(t.src.indexOf('?')>-1?'&':'?')+'r='+Date.now();return}
+ if(!t.dataset.err){t.dataset.err='1';t.style.display='none';t.insertAdjacentHTML('afterend','<div class="imgerr">تعذّر تحميل الصورة. تحقق من الاتصال ثم أعد المحاولة.</div>')}},true);
+/* ---------- boot ---------- */
+fetch('data.json?v=5',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}).then(j=>{if(!Array.isArray(j)||!j.length)throw new Error('empty');DATA=j;prep();loadCfg();home()})
+ .catch(()=>{app.innerHTML='<p class="note">تعذّر تحميل data.json — افتح الموقع عبر GitHub Pages أو خادم محلي.</p>'});
+</script>
+</body>
+</html>
